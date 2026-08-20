@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: animezia-php-stream
+    runtime: docker
+    plan: free
+    healthCheckPath: /health.php
+    envVars:
+      - key: ALLOWED_ORIGINS
+        sync: false
